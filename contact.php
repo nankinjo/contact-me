@@ -1,9 +1,9 @@
 <?php
   $mode = 'input';
-  if( isset($_POST=['back']) && ($_POST=['back'] ){
-  } else if( isset($_POST=['confirm']) && ($_POST=['confirm']){
+  if( isset($_POST['back']) && $_POST['back'] {
+  } else if( isset($_POST['confirm']) && $_POST['confirm']{
     $mode = 'confirm';
-  } else if( isset($_POST=['send']) && ($_POST=['send']{
+  } else if( isset($_POST['send']) && $_POST['send']{
     $mode = 'send';
   }
 ?>  
@@ -28,7 +28,7 @@
   <?php if( $mode == 'input' ){ ?>
    <form action="./contact.php" method="post">
      <div class="head">
-       <h1>ご意見フォーム<h1>
+       <h1>ご意見フォーム</h1>
      </div>
      <input type="text" placeholder="お名前" name="name" required><br>
      <input type="email" placeholder="Email" name="email" required><br>
